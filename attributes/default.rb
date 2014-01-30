@@ -26,13 +26,13 @@ default['logrotate']['global'] = {
     'missingok' => true,
     'monthly' => true,
     'create' => '0664 root utmp',
-    'rotate' => 1
+    'rotate' => 8
   },
 
   '/var/log/btmp' => {
     'missingok' => true,
     'monthly' => true,
     'create' => '0660 root utmp',
-    'rotate' => 1
+    'rotate' => 8
   }
 }
